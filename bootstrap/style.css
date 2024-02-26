@@ -1,0 +1,64 @@
+.navbar {
+    background-color: transparent !important;
+}
+
+.navbar-brand img {
+    height: 48px;
+}
+
+.Home {
+    position: relative;
+    background-color: rgba(246, 235, 218, 0.8); /* Adjust the opacity as needed */
+    padding: 100px 0; /* Adjust top and bottom padding as needed */
+    z-index: 0; /* Ensure it's behind other content */
+}
+
+.absolute-images {
+    position: relative;
+    text-align: center;
+    z-index: 1;
+}
+
+.brown-circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px; /* Adjust as needed */
+    height: 400px; /* Adjust as needed */
+    border-radius: 50%;
+    background-color: #6e4c27; /* Adjust color as needed */
+    z-index: 0; /* Ensure it's behind other content */
+}
+
+.coffee-cup, .transparent-coffee {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 80%; /* Adjust as needed */
+    max-height: 80%; /* Adjust as needed */
+    z-index: 1; /* Ensure it's above the brown circle */
+}
+
+.home-content-left {
+    padding: 20px; /* Add padding as needed */
+    background-color: rgba(255, 255, 255, 0.8); /* Adjust opacity as needed */
+    border-radius: 10px; /* Adjust border radius as needed */
+    z-index: 2; /* Ensure it's above other content */
+}
+
+.input-with-icon {
+    position: relative;
+}
+
+.input-with-icon i {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+}
+
+.input-with-icon input {
+    padding-left: 30px; 
+}

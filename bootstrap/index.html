@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet"  href="style.css">
+    <script src="https://unpkg.com/akar-icons-fonts"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Crete+Round&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(246, 235, 218);
+            margin: 0;
+            font-family: 'Cretype', sans-serif;
+        }
+    
+        .navbar {
+            width: 80%;
+            text-align: center;
+            margin: 25px auto 0;
+            position: relative;
+            z-index: 2;
+        }
+        
+    
+        .navbar-nav .nav-link.active {
+            color: rgb(254, 151, 56) !important; 
+        }
+    
+        .navbar-nav .nav-link {
+            color: black;
+            margin-right: 15px;
+            font-size: larger;
+        }
+    
+        .no-icon::after {
+            display: none !important;
+        }
+    
+        .src-image {
+            margin-top: 7px;
+            margin-right: -35px;
+        }
+    
+        .cart-image {
+            margin-top: 5px;
+        }
+    
+        .input-group input {
+            z-index: -2;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+    
+        .input-group input:focus {
+            outline: none;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); 
+        }
+    
+        .Home {
+            display: flex;
+            justify-content: flex-end;
+            position: relative; 
+            z-index: 1;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    
+        .Home img {
+            height: 380px;
+            width: auto;
+            max-width: 100%;
+            z-index: -1;
+        }
+    
+        .container {
+            width: 100%;
+        }
+
+        .item-hero {
+            width: 80%;
+            margin-top: 100px;
+            display: flex;
+
+        }
+
+        .tulisan-hero{
+            margin-left: 162px;
+        }
+
+
+        .tulisan-hero h1 {
+            font-size: 50px;
+            font-weight: 630;
+        }
+
+        .tulisan-gede-atas {
+            display: flex;
+            gap: 10px;
+        }
+
+        .tulisan-kecil {
+            margin-top: 30px;
+            color: rgb(143, 140, 135);
+        }
+        .tulisan-kecil-bawah {
+            margin-top: -15px;
+        }
+
+        .tombol-kiri {
+        background-color: rgb(47, 33, 5);
+        color: white; 
+        padding: 10px 20px; 
+        border-radius: 100px; 
+        text-decoration: none;
+        display: inline-block;
+        }
+
+        .tombol-kiri :hover{
+            color: white;
+        }
+        
+
+        .bg-white-cart{
+            background-color: rgb(254, 143, 42);
+            padding: 5px;
+            display: inline-block; 
+            border-radius: 50%;
+        }
+        .bg-white-cart2{
+            background-color: rgb(254, 143, 42);
+            padding: 5px;
+            display: inline-block; 
+            border-radius: 50%;
+        }
+        .tombol-kanan {
+    margin-left: 35px;
+    color: rgb(254, 143, 42);
+    text-decoration: none;
+    display: inline-block;
+}
+
+.tombol-kanan:hover {
+    color: rgb(254, 143, 42);
+}
+
+
+    .gambarhero {
+        position: absolute;   
+        margin-top: -40px;      
+        margin-right: 190px;  
+    right: 0;
+    z-index: 1; 
+}
+
+.Home img {
+    height: 380px;
+    width: auto;
+    max-width: 100%;
+    z-index: 0; 
+}
+
+.gambarkopih {
+    margin-left: -30px;
+    margin-top: -40px;
+}
+
+.gambarkopihero{
+    background-color: rgb(47, 33, 5);
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+    margin-right: -330px;
+}
+
+.gambarkopihero img{
+    width: 350px;
+}
+
+.capucinno{
+    background-color: white;
+        color: rgb(47, 33, 5); 
+        padding: 10px 50px; 
+        border-radius: 100px; 
+        text-decoration: none;
+        display: inline-block;
+        font-weight: 600;
+
+        position: absolute;   
+        margin-top: -290px;      
+        margin-right: 410px;  
+        right: 0;
+        z-index: 1; 
+
+        border: 5px solid rgba(110, 110, 110, 0.482);
+}
+
+.star {
+    background-color: white;
+        color: rgb(47, 33, 5); 
+        padding: 10px 30px; 
+        border-radius: 100px; 
+        text-decoration: none;
+        display: inline-block;
+        font-weight: 600;
+
+        position: absolute;   
+        margin-top: -250px;      
+        margin-right: 180px;  
+        right: 0;
+        z-index: 1; 
+
+        border: 5px solid rgba(110, 110, 110, 0.482);
+}
+.hargak {
+    background-color: white;
+        color: rgb(47, 33, 5); 
+        padding: 10px 40px; 
+        border-radius: 100px; 
+        text-decoration: none;
+        display: inline-block;
+        font-weight: 600;
+
+        position: absolute;   
+        margin-top: -30px;      
+        margin-right: 480px;  
+        right: 0;
+        z-index: 1; 
+
+        border: 5px solid rgba(110, 110, 110, 0.482);
+}
+.Home2{
+    margin-top: 60px;
+}
+.popular{
+    margin-top: -280px;
+    margin-left: 162px;
+}
+.popular h1{
+    font-size: 30px;
+}
+
+.menu{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    width: 300px;
+    height: 310px;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+
+}
+
+.card img {
+    align-items: center;
+    justify-content: center;
+    width: 230px;
+    height: auto;
+    border-radius: 15px;
+    margin-left: 15px;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h2 {
+    font-size: 20px;
+    font-weight: 800;
+    margin-top: 0;
+    color: #333;
+}
+
+.card-content p {
+    color: #777;
+}
+.card-atas{
+    display: flex;
+}
+
+.card-atas {
+        display: flex;
+        justify-content: space-between;
+        align-items: center; /* Optional: Align items vertically */
+    }
+    .tombolkartu{
+        background-color: #fff;
+        border: 2px solid rgb(254, 143, 42);
+        border-radius: 5px;
+        padding: 1px 3px; 
+    }
+    .tombol{
+        display: flex;
+        gap: 20px;
+        
+    }
+    .menuu{
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    </style>
+    
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg " >
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.png" alt="hanado" height="40 px">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+                    <li class="nav-item text-center">
+                        <a class="nav-link active" aria-current="page" href="#">About us</a>
+                    </li>
+                    <li class="nav-item text-center">
+                        <a class="nav-link" href="#">Our Product</a>
+                    </li>
+                    <li class="nav-item dropdown text-center">
+                        <a class="nav-link dropdown-toggle no-icon" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Delivery
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">About us</a></li>
+                            <li><a class="dropdown-item" href="#">Our Product</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Delivery</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            <form class="d-flex align-items-center">
+    <div class="input-group">
+        <svg class="src-image" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M21 21L16.514 16.506L21 21ZM19 10.5C19 12.7543 18.1045 14.9163 16.5104 16.5104C14.9163 18.1045 12.7543 19 10.5 19C8.24566 19 6.08365 18.1045 4.48959 16.5104C2.89553 14.9163 2 12.7543 2 10.5C2 8.24566 2.89553 6.08365 4.48959 4.48959C6.08365 2.89553 8.24566 2 10.5 2C12.7543 2 14.9163 2.89553 16.5104 4.48959C18.1045 6.08365 19 8.24566 19 10.5V10.5Z" stroke="#1D1D1D" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <input class="form-control me-2 rounded-pill ps-5" type="text" placeholder="Capucinno" aria-label="Capucinno">
+        <svg class="cart-image" width="28" height="26" viewBox="0 0 28 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5.66667 6.33333H24.0533C24.4259 6.33334 24.7943 6.41142 25.1349 6.56254C25.4754 6.71365 25.7805 6.93444 26.0305 7.21068C26.2805 7.48692 26.4698 7.81248 26.5863 8.16636C26.7027 8.52025 26.7437 8.89462 26.7067 9.26533L25.9067 17.2653C25.8409 17.9233 25.5329 18.5334 25.0426 18.9772C24.5523 19.4209 23.9146 19.6666 23.2533 19.6667H10.52C9.9033 19.6669 9.30557 19.4534 8.82859 19.0625C8.35162 18.6716 8.02487 18.1274 7.904 17.5227L5.66667 6.33333Z" stroke="#1D1D1D" stroke-width="2" stroke-linejoin="round"/>
+            <path d="M20.3333 25H23M5.66667 6.33333L4.58667 2.00933C4.51444 1.721 4.34794 1.46508 4.11361 1.28221C3.87928 1.09934 3.59057 1.00001 3.29333 1H1.66667L5.66667 6.33333ZM9.66667 25H12.3333H9.66667Z" stroke="#1D1D1D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            
+    </div>
+    </form>
+                
+            </div>
+        </div>
+    </nav>
+    
+    <section class="Hero" >
+        <div class="Home">
+        <img class="bghero" src="Images/bg-hero.png" alt="" style="height: 380px; width: auto;">
+        </div>
+
+    </section>
+
+    <section class="hero2">
+        <div class="item-hero">
+            <div class="tulisan-hero">
+                <div class="tulisan-gede-atas">
+                <h1 class="tulisan-gede">Enjoy your</h1>
+                <h1 class="tulisan-gede" style="color: rgb(254, 155, 62)">cofee</h1>
+                </div>
+                <h1 class="tulisan-gede" style="margin-top: 10px;">before your activity</h1>
+                <div class="tulisan-kecil">
+                    <p class="tulisan-kecil-atas">Boost your productivity and build your</p>
+                    <p class="tulisan-kecil-bawah">mood with glass of coffee in the morning</p>
+                </div>
+                <div class="tombol-hero">
+                    <a class="tombol-kiri" href="">Order Now <svg class="bg-white-cart" width="23" height="23" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <rect width="12" height="12" fill="url(#pattern0)"/>
+                                    <defs>
+                                    <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                    <use xlink:href="#image0_1310_106" transform="scale(0.0166667)"/>
+                                    </pattern>
+                                    <image id="image0_1310_106" width="60" height="60" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAALZSURBVHgB7ZuBddowEIbPTMAGVSdoNqjZIJ0g7QRNJ4BMEDpByAbpBKETlE6AMgFkgusddvpoym9LwjxOjr/3ZL+cbcX/0+l0kgyRwMxTKRv+H7XdSXHUF0TMLYcxpT4AWhZRUu5ECv5FmTOS8j3i/gsRfUEZo4LnUnzEMyVlzKgoiq2cP0U884H6gLjqdWA/3lBfEDGPgaIdZcro1d9fpGwDnispU/4RLP3ZUyW6jY/UJ8Rl5y0uvaZMKQ4ZRdBYTppkOMoP7ZJLKQ/isfevLxboqTrBeJQypnzxUiZ1V90xQnfKTSs53VDeOClrabyrF0PR9oQOVZR5dkWVm2tLr0IEOzllG6T2WIrgSatgpc6ucu7LL0yC7mrIwD6TMfSdGE9570aB9fwGdnNTRXHbhZy+gctlqOAVsFudOT0Au6MQdEwGLmJ25gTel2MqQP3CkTH0ncC7rkNdWvHAbtGtHbD7GMEocL0ne8AhNEYwClwl2cMBu+9CsEWXRi381IVgDRDWsjAH7NtgwfXqpgeXrSUg74A9KkorP4E9l8X551jBufRjB+yeYpC+eokGdDIEH5tl7VU0ZoyJwNXwjrs0OMqlWwKXIxs4YPd6iO3DivUEBHnaboMhRfATsFsJXA7Yn/WQIngJ7FaGJgfsXg9durQjG3Tr0vWi9qENN42OFloZZVleDyktrKBWtiAYtbDXQ6pgNDe+ojNSr76U4HLINjCs+LIhAZnyGZZ95H+WmvFxSyYYtBB/oHJ1G60kl8X5hcSe3b53kkvXGVfM507n5u+mYGofVvRzpxXZ52Z/u/QouFoOXbNdZtQ1XIlesC10Df360PsmBS0kXE4zqnLqc4zHGle0i+mqzLyOMwMDAwMDbxMZlr5y888J9NotJXDKupPg6kOSUGZW6k6Gw7+zVqI+k+i67mMmD/ucMqvptO6uBP+IuPee4jhl3elo/+HmmdMmtY91Wfcfe0B48y7j/zUAAAAASUVORK5CYII="/>
+                                    </defs>
+                                    </svg>
+                                
+                    </a>
+                    <a class="tombol-kanan" href="">More Menu</a>
+                </div>
+            </div>
+            <div class="gambarhero">
+                <svg class="gambarkopihero" width="435" height="253" viewBox="0 0 435 253" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g style="mix-blend-mode:screen" opacity="0.1">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M301.437 14.0591C301.437 50.5579 288.392 85.5615 265.172 111.37C241.952 137.179 210.459 151.678 177.621 151.678C144.783 151.678 113.289 137.179 90.0695 111.37C66.8495 85.5615 53.8046 50.5579 53.8046 14.0591C53.8046 14.0591 124.557 44.1634 177.621 14.0591C230.685 -16.0453 301.437 14.0591 301.437 14.0591ZM342.858 107.631C336.213 122.252 328.185 135.528 319.125 146.728C313.458 152.224 308.698 157.379 304.284 162.16C281.144 187.22 267.486 202.011 182.239 202.011C93.2949 202.011 81.9833 189.871 54.4414 160.313L54.4411 160.313C50.5502 156.137 46.3353 151.614 41.5319 146.728C2.72711 107.257 0.740479 67.5161 0.740479 17.457H36.1165C36.1165 88.7618 66.5293 123.017 66.5293 123.017C66.5293 123.017 93.799 168.478 182.239 168.478C270.679 168.478 292.593 123.017 292.593 123.017C292.593 123.017 322.947 71.9842 322.947 13.2626H360.027C364.605 11.8374 369.383 10.9585 374.251 10.6672C386.521 9.93312 398.713 12.9717 409.018 19.3319C419.324 25.6922 427.192 35.0351 431.455 45.9734C435.717 56.9118 436.148 68.8625 432.682 80.0513C429.216 91.2399 422.038 101.071 412.215 108.083C402.391 115.095 390.446 118.916 378.152 118.978C365.858 119.04 353.87 115.339 343.969 108.426C343.595 108.165 343.225 107.9 342.858 107.631ZM361.221 43.7423C365.532 40.6754 370.703 38.8601 376.104 38.5368C382.054 38.1809 387.965 39.6542 392.962 42.7381C397.959 45.822 401.774 50.3521 403.841 55.6558C405.908 60.9594 406.116 66.7539 404.436 72.1791C402.755 77.6042 399.275 82.3707 394.512 85.7704C389.749 89.1713 383.957 91.0235 377.996 91.0537C372.034 91.0839 366.222 89.2895 361.422 85.9374C358.333 83.7811 355.769 81.0542 353.87 77.9437C357.124 66.8795 359.613 55.3992 361.221 43.7423ZM20.5924 227.177H343.493C349.573 227.177 354.501 232.811 354.501 239.76C354.501 246.71 349.573 252.344 343.493 252.344H20.5924C14.5129 252.344 9.58444 246.71 9.58444 239.76C9.58444 232.811 14.5129 227.177 20.5924 227.177Z" fill="#F9D9AA"/>
+                    </g>
+                    </svg>
+                <img class="gambarkopih"src="Images/coffe-glass.png" alt="" srcset="">
+            </div>
+            
+        </div><p class="capucinno">Cappucinno</p>
+        <p class="star">
+            4.8
+            <svg width="15" height="14" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11.4269 2.63301C11.7469 1.78901 12.9579 1.78901 13.2789 2.63301L15.3489 8.36701C15.4212 8.5538 15.5483 8.71429 15.7136 8.8273C15.879 8.94032 16.0747 9.00054 16.2749 9.00001H21.3619C22.3019 9.00001 22.7119 10.17 21.9729 10.743L18.3529 14C18.1908 14.1247 18.0723 14.2975 18.0144 14.4937C17.9566 14.6898 17.9624 14.8993 18.0309 15.092L19.3529 20.695C19.6749 21.595 18.6329 22.368 17.8449 21.814L12.9279 18.694C12.7596 18.5757 12.5588 18.5122 12.3529 18.5122C12.1471 18.5122 11.9463 18.5757 11.7779 18.694L6.86094 21.814C6.07394 22.368 5.03094 21.594 5.35294 20.695L6.67494 15.092C6.74352 14.8993 6.7493 14.6898 6.69145 14.4937C6.6336 14.2975 6.5151 14.1247 6.35294 14L2.73294 10.743C1.99294 10.17 2.40494 9.00001 3.34294 9.00001H8.42994C8.63024 9.00068 8.82601 8.94051 8.99136 8.82748C9.15671 8.71445 9.28385 8.55388 9.35594 8.36701L11.4259 2.63301H11.4269Z" fill="#FFD057" stroke="#FFD057" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                
+        </p>
+        <p class="hargak">18K</p>
+    </section>
+
+    <section class="Hero2" >
+        <div class="Home2">
+        <img class="bghero2" src="Images/bg-hero-2.png" alt="" style="height: 380px; width: auto;">
+        </div>
+
+    </section>
+
+    <section class="popular">
+        <h1>Popular Now</h1>
+    </section>
+<div class="menuu">
+    <section class="menu">
+        <div class="container-menu">
+            <div class="card">
+                <img src="Images/product-1.png" alt="Card Image" >
+                <div class="card-content">
+                    <div class="card-atas">
+                    <h2>Vanilla Latte</h2>
+                    <h2 class="kotakkanan">21K</h2>
+                </div>
+                <div class="tombol">
+                    <p>Hot</p>
+                    <p class="tombolkartu">Cold</p><svg class="bg-white-cart2" width="23" height="23" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <rect width="12" height="12" fill="url(#pattern0)"/>
+                        <defs>
+                        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                        <use xlink:href="#image0_1310_106" transform="scale(0.0166667)"/>
+                        </pattern>
+                        <image id="image0_1310_106" width="60" height="60" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAALZSURBVHgB7ZuBddowEIbPTMAGVSdoNqjZIJ0g7QRNJ4BMEDpByAbpBKETlE6AMgFkgusddvpoym9LwjxOjr/3ZL+cbcX/0+l0kgyRwMxTKRv+H7XdSXHUF0TMLYcxpT4AWhZRUu5ECv5FmTOS8j3i/gsRfUEZo4LnUnzEMyVlzKgoiq2cP0U884H6gLjqdWA/3lBfEDGPgaIdZcro1d9fpGwDnispU/4RLP3ZUyW6jY/UJ8Rl5y0uvaZMKQ4ZRdBYTppkOMoP7ZJLKQ/isfevLxboqTrBeJQypnzxUiZ1V90xQnfKTSs53VDeOClrabyrF0PR9oQOVZR5dkWVm2tLr0IEOzllG6T2WIrgSatgpc6ucu7LL0yC7mrIwD6TMfSdGE9570aB9fwGdnNTRXHbhZy+gctlqOAVsFudOT0Au6MQdEwGLmJ25gTel2MqQP3CkTH0ncC7rkNdWvHAbtGtHbD7GMEocL0ne8AhNEYwClwl2cMBu+9CsEWXRi381IVgDRDWsjAH7NtgwfXqpgeXrSUg74A9KkorP4E9l8X551jBufRjB+yeYpC+eokGdDIEH5tl7VU0ZoyJwNXwjrs0OMqlWwKXIxs4YPd6iO3DivUEBHnaboMhRfATsFsJXA7Yn/WQIngJ7FaGJgfsXg9durQjG3Tr0vWi9qENN42OFloZZVleDyktrKBWtiAYtbDXQ6pgNDe+ojNSr76U4HLINjCs+LIhAZnyGZZ95H+WmvFxSyYYtBB/oHJ1G60kl8X5hcSe3b53kkvXGVfM507n5u+mYGofVvRzpxXZ52Z/u/QouFoOXbNdZtQ1XIlesC10Df360PsmBS0kXE4zqnLqc4zHGle0i+mqzLyOMwMDAwMDbxMZlr5y888J9NotJXDKupPg6kOSUGZW6k6Gw7+zVqI+k+i67mMmD/ucMqvptO6uBP+IuPee4jhl3elo/+HmmdMmtY91Wfcfe0B48y7j/zUAAAAASUVORK5CYII="/>
+                        </defs>
+                        </svg>
+    </div></div>
+                    
+    
+        </div>
+    </section>
+    <section class="menu">
+        <div class="container-menu">
+            <div class="card">
+                <img src="Images/product-1.png" alt="Card Image" >
+                <div class="card-content">
+                    <div class="card-atas">
+                    <h2>Vanilla Latte</h2>
+                    <h2 class="kotakkanan">21K</h2>
+                </div>
+                <div class="tombol">
+                    <p>Hot</p>
+                    <p class="tombolkartu">Cold</p><svg class="bg-white-cart2" width="23" height="23" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <rect width="12" height="12" fill="url(#pattern0)"/>
+                        <defs>
+                        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                        <use xlink:href="#image0_1310_106" transform="scale(0.0166667)"/>
+                        </pattern>
+                        <image id="image0_1310_106" width="60" height="60" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAALZSURBVHgB7ZuBddowEIbPTMAGVSdoNqjZIJ0g7QRNJ4BMEDpByAbpBKETlE6AMgFkgusddvpoym9LwjxOjr/3ZL+cbcX/0+l0kgyRwMxTKRv+H7XdSXHUF0TMLYcxpT4AWhZRUu5ECv5FmTOS8j3i/gsRfUEZo4LnUnzEMyVlzKgoiq2cP0U884H6gLjqdWA/3lBfEDGPgaIdZcro1d9fpGwDnispU/4RLP3ZUyW6jY/UJ8Rl5y0uvaZMKQ4ZRdBYTppkOMoP7ZJLKQ/isfevLxboqTrBeJQypnzxUiZ1V90xQnfKTSs53VDeOClrabyrF0PR9oQOVZR5dkWVm2tLr0IEOzllG6T2WIrgSatgpc6ucu7LL0yC7mrIwD6TMfSdGE9570aB9fwGdnNTRXHbhZy+gctlqOAVsFudOT0Au6MQdEwGLmJ25gTel2MqQP3CkTH0ncC7rkNdWvHAbtGtHbD7GMEocL0ne8AhNEYwClwl2cMBu+9CsEWXRi381IVgDRDWsjAH7NtgwfXqpgeXrSUg74A9KkorP4E9l8X551jBufRjB+yeYpC+eokGdDIEH5tl7VU0ZoyJwNXwjrs0OMqlWwKXIxs4YPd6iO3DivUEBHnaboMhRfATsFsJXA7Yn/WQIngJ7FaGJgfsXg9durQjG3Tr0vWi9qENN42OFloZZVleDyktrKBWtiAYtbDXQ6pgNDe+ojNSr76U4HLINjCs+LIhAZnyGZZ95H+WmvFxSyYYtBB/oHJ1G60kl8X5hcSe3b53kkvXGVfM507n5u+mYGofVvRzpxXZ52Z/u/QouFoOXbNdZtQ1XIlesC10Df360PsmBS0kXE4zqnLqc4zHGle0i+mqzLyOMwMDAwMDbxMZlr5y888J9NotJXDKupPg6kOSUGZW6k6Gw7+zVqI+k+i67mMmD/ucMqvptO6uBP+IuPee4jhl3elo/+HmmdMmtY91Wfcfe0B48y7j/zUAAAAASUVORK5CYII="/>
+                        </defs>
+                        </svg>
+    </div></div>
+                    
+    
+        </div>
+    </section>
+    <section class="menu">
+        <div class="container-menu">
+            <div class="card">
+                <img src="Images/product-1.png" alt="Card Image" >
+                <div class="card-content">
+                    <div class="card-atas">
+                    <h2>Vanilla Latte</h2>
+                    <h2 class="kotakkanan">21K</h2>
+                </div>
+                <div class="tombol">
+                    <p>Hot</p>
+                    <p class="tombolkartu">Cold</p><svg class="bg-white-cart2" width="23" height="23" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <rect width="12" height="12" fill="url(#pattern0)"/>
+                        <defs>
+                        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                        <use xlink:href="#image0_1310_106" transform="scale(0.0166667)"/>
+                        </pattern>
+                        <image id="image0_1310_106" width="60" height="60" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAALZSURBVHgB7ZuBddowEIbPTMAGVSdoNqjZIJ0g7QRNJ4BMEDpByAbpBKETlE6AMgFkgusddvpoym9LwjxOjr/3ZL+cbcX/0+l0kgyRwMxTKRv+H7XdSXHUF0TMLYcxpT4AWhZRUu5ECv5FmTOS8j3i/gsRfUEZo4LnUnzEMyVlzKgoiq2cP0U884H6gLjqdWA/3lBfEDGPgaIdZcro1d9fpGwDnispU/4RLP3ZUyW6jY/UJ8Rl5y0uvaZMKQ4ZRdBYTppkOMoP7ZJLKQ/isfevLxboqTrBeJQypnzxUiZ1V90xQnfKTSs53VDeOClrabyrF0PR9oQOVZR5dkWVm2tLr0IEOzllG6T2WIrgSatgpc6ucu7LL0yC7mrIwD6TMfSdGE9570aB9fwGdnNTRXHbhZy+gctlqOAVsFudOT0Au6MQdEwGLmJ25gTel2MqQP3CkTH0ncC7rkNdWvHAbtGtHbD7GMEocL0ne8AhNEYwClwl2cMBu+9CsEWXRi381IVgDRDWsjAH7NtgwfXqpgeXrSUg74A9KkorP4E9l8X551jBufRjB+yeYpC+eokGdDIEH5tl7VU0ZoyJwNXwjrs0OMqlWwKXIxs4YPd6iO3DivUEBHnaboMhRfATsFsJXA7Yn/WQIngJ7FaGJgfsXg9durQjG3Tr0vWi9qENN42OFloZZVleDyktrKBWtiAYtbDXQ6pgNDe+ojNSr76U4HLINjCs+LIhAZnyGZZ95H+WmvFxSyYYtBB/oHJ1G60kl8X5hcSe3b53kkvXGVfM507n5u+mYGofVvRzpxXZ52Z/u/QouFoOXbNdZtQ1XIlesC10Df360PsmBS0kXE4zqnLqc4zHGle0i+mqzLyOMwMDAwMDbxMZlr5y888J9NotJXDKupPg6kOSUGZW6k6Gw7+zVqI+k+i67mMmD/ucMqvptO6uBP+IuPee4jhl3elo/+HmmdMmtY91Wfcfe0B48y7j/zUAAAAASUVORK5CYII="/>
+                        </defs>
+                        </svg>
+    </div></div>
+                    
+    
+        </div>
+    </section>
+
+
+
+</div>    
+<h1 style=" margin-left: 162px;">How to use delivery service</h1>
+<div style="justify-content: center; display: flex; gap: 100px;">
+<div style="display:grid; justify-content: center; align-items: center; text-align: center;">
+    <img src="Images/service-1.png" alt="" style="width: 200px; height: auto; margin-left: 50px;">
+    <h2>choose your coffee</h2>
+    <p>there are 20+ coffees for you</p>
+</div>
+<div  style="display:grid; justify-content: center; align-items: center; text-align: center; ">
+    <img src="Images/service-2.png" alt="" style="width: 200px; height: auto; margin-left: 50px;">
+    <h2>choose your coffee</h2>
+    <p>there are 20+ coffees for you</p>
+</div>
+<div  style="display:grid; justify-content: center; align-items: center; text-align: center;">
+    <img src="Images/service-3.png" alt="" style="width: 200px; height: auto; margin-left: 50px;">
+    <h2>choose your coffee</h2>
+    <p>there are 20+ coffees for you</p>
+</div>
+</div>
+ 
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>
