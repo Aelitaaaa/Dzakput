@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet/scss" type="text/css" href="style.scss">
+    <title>Document</title>
+
+    <style>
+
+    body {
+            background-color: rgb(255, 255, 255);
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+
+    .about_us {
+        background-color: rgb(246, 235, 218);
+        position: relative; 
+        overflow: hidden; 
+        margin-top: -420px;
+        z-index: -1;
+        padding-top: 20px;
+        padding-bottom: 60px;
+    }
+
+    .transparent-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0.5; 
+            object-fit: cover;
+        }
+
+        .content {
+            display: flex;
+            position: relative;
+            margin-left: 800px;
+            margin-right: 180px;
+            
+        }
+
+        .content-left{
+            border: solid 5px white;
+            margin-left: 280px;
+            width: 350px;
+            z-index: 1;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+        }
+
+    .content-right{
+        display: inline-block;
+        padding: 20px; 
+        }  
+
+        .content-right h2{
+            font-weight: 600;
+        }
+
+        .content-right h1:after {
+    content: "Us";
+    display: inline-block;
+    border-bottom: 5px solid rgb(255, 144, 42); 
+    border-radius:2px ;
+    margin-left: 5px; 
+    color: rgb(0, 0, 0);
+}
+
+.judul-h1-menu h1:after {
+    content: "for you";
+    display: inline-block;
+    border-bottom: 5px solid rgb(255, 144, 42); 
+    border-radius:2px ;
+    margin-left: 5px; 
+    color: rgb(0, 0, 0);
+}
+
+
+    .get-coffee{
+        background-color: rgb(47, 33, 5);
+        color: rgb(244, 172, 39) !important;
+        text-decoration: none !important;
+        padding: 10px 20px;
+        border-radius: 20px;
+        font-weight: 700;
+        margin-top: 200px;
+    }
+
+    .special-menu{
+        margin-top: 100px !important;
+    }
+
+    .judul-h1-menu{
+        margin-left: 150px;
+    }
+
+    .judul-h1-menu h1{
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+    .gambar-menu{
+        width: 300px;
+        height: auto;
+        border-radius: 15px;
+        z-index: 1;
+        position: relative;
+        margin-top: -20px;
+    }
+
+    .card {
+    width: 300px;
+    height: 330px;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+
+}
+
+.menu{
+    margin-left: 180px;
+}
+
+.menuatas{
+    display: flex;
+    gap: 50px;
+}
+
+.card h2 {
+    font-weight: 600;
+}
+
+.h2card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.harga h2{
+    font-weight: 800;
+}
+
+.bg-white-cart2{
+            background-color: rgb(254, 143, 42);
+            padding: 5px;
+            display: inline-block; 
+            border-radius: 50%;
+        }
+
+        .deskripsimenu{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: -30px;
+        }
+
+        .deskripsimenu p{
+            font-weight: 500;
+            color: rgb(158, 158, 158);
+        }
+
+        .menubawah{
+            margin-top: 60px;
+            display: flex;
+            gap: 50px;
+}
+
+.rating{
+    background-color: #ffffff;
+    padding: 3px 10px !important;
+    border: solid 4px rgba(137, 137, 137, 0.947) !important;
+    border-radius: 20px;
+    width: fit-content;
+    display: flex;
+    z-index: 2;
+    position: absolute;
+    margin-left: 10px;
+    margin-top: -5px;
+    font-weight: 700;
+}
+
+    </style>
+</head>
+<body>
+
+    <div class="content-left">
+        <img src="Images/highlight-product.png" alt="" style="width: 350px;">
+    </div>
+    <section class="about_us">
+        <div class="transparent-background">
+            
+        </div>
+    <div class="content">
+        <div class="content-right">
+            <h1 style="font-size: 35px;">About </h1>
+            <h2>We provide quality coffee,</h2>
+            <h2 style=" margin-top: -25px;">and ready to deliver.</h2>
+            <p style="font-size: 20px; color: rgb(158, 158, 158);">We are a company that makes and distributes delicious drinks. our main product is made with a secret recipe and available in stores worldwide.</p>
+            <div style="margin-top: 50px"><a class="get-coffee" href="">Get your coffee</a></div>
+        </div>
+    </div>
+    </section>
+
+    <section class="special-menu">
+        <div class="judul-h1-menu">
+            <h1>Special menu</h1>
+        </div>
+        <div class="menu">
+            <div class="menuatas">
+
+                <div class="card">
+                    <a class="rating">4.8<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.4269 2.63301C11.7469 1.78901 12.9579 1.78901 13.2789 2.63301L15.3489 8.36701C15.4212 8.5538 15.5483 8.71429 15.7136 8.8273C15.879 8.94032 16.0747 9.00054 16.2749 9.00001H21.3619C22.3019 9.00001 22.7119 10.17 21.9729 10.743L18.3529 14C18.1908 14.1247 18.0723 14.2975 18.0144 14.4937C17.9566 14.6898 17.9624 14.8993 18.0309 15.092L19.3529 20.695C19.6749 21.595 18.6329 22.368 17.8449 21.814L12.9279 18.694C12.7596 18.5757 12.5588 18.5122 12.3529 18.5122C12.1471 18.5122 11.9463 18.5757 11.7779 18.694L6.86094 21.814C6.07394 22.368 5.03094 21.594 5.35294 20.695L6.67494 15.092C6.74352 14.8993 6.7493 14.6898 6.69145 14.4937C6.6336 14.2975 6.5151 14.1247 6.35294 14L2.73294 10.743C1.99294 10.17 2.40494 9.00001 3.34294 9.00001H8.42994C8.63024 9.00068 8.82601 8.94051 8.99136 8.82748C9.15671 8.71445 9.28385 8.55388 9.35594 8.36701L11.4259 2.63301H11.4269Z" fill="#FFD057" stroke="#FFD057" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                    <img class="gambar-menu" src="Images/product-4.png" alt="" srcset="">
+                    <div class="h2card">
+                    <h2>Sandwich</h2>
+                    <h2 class="harga" style="font-weight: 700;">12 K</h2>
+                </div>
+                <div class="deskripsimenu">
+                <p style="max-width: 180px;">bread with meat and vegetables</p>
+                    <svg class="bg-white-cart2" width="30" height="30" viewBox="-4 -4 19 19" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <rect width="10" height="10" fill="url(#pattern0)"/>
+                    <defs>
+                    <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                    <use xlink:href="#image0_1310_106" transform="scale(0.0166667)"/>
+                    </pattern>
+                    <image id="image0_1310_106" width="60" height="60" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAALZSURBVHgB7ZuBddowEIbPTMAGVSdoNqjZIJ0g7QRNJ4BMEDpByAbpBKETlE6AMgFkgusddvpoym9LwjxOjr/3ZL+cbcX/0+l0kgyRwMxTKRv+H7XdSXHUF0TMLYcxpT4AWhZRUu5ECv5FmTOS8j3i/gsRfUEZo4LnUnzEMyVlzKgoiq2cP0U884H6gLjqdWA/3lBfEDGPgaIdZcro1d9fpGwDnispU/4RLP3ZUyW6jY/UJ8Rl5y0uvaZMKQ4ZRdBYTppkOMoP7ZJLKQ/isfevLxboqTrBeJQypnzxUiZ1V90xQnfKTSs53VDeOClrabyrF0PR9oQOVZR5dkWVm2tLr0IEOzllG6T2WIrgSatgpc6ucu7LL0yC7mrIwD6TMfSdGE9570aB9fwGdnNTRXHbhZy+gctlqOAVsFudOT0Au6MQdEwGLmJ25gTel2MqQP3CkTH0ncC7rkNdWvHAbtGtHbD7GMEocL0ne8AhNEYwClwl2cMBu+9CsEWXRi381IVgDRDWsjAH7NtgwfXqpgeXrSUg74A9KkorP4E9l8X551jBufRjB+yeYpC+eokGdDIEH5tl7VU0ZoyJwNXwjrs0OMqlWwKXIxs4YPd6iO3DivUEBHnaboMhRfATsFsJXA7Yn/WQIngJ7FaGJgfsXg9durQjG3Tr0vWi9qENN42OFloZZVleDyktrKBWtiAYtbDXQ6pgNDe+ojNSr76U4HLINjCs+LIhAZnyGZZ95H+WmvFxSyYYtBB/oHJ1G60kl8X5hcSe3b53kkvXGVfM507n5u+mYGofVvRzpxXZ52Z/u/QouFoOXbNdZtQ1XIlesC10Df360PsmBS0kXE4zqnLqc4zHGle0i+mqzLyOMwMDAwMDbxMZlr5y888J9NotJXDKupPg6kOSUGZW6k6Gw7+zVqI+k+i67mMmD/ucMqvptO6uBP+IuPee4jhl3elo/+HmmdMmtY91Wfcfe0B48y7j/zUAAAAASUVORK5CYII="/>
+                    </defs>
+                    </svg>
+            </div>
+                </div>
+
+                <div class="card">
+                    <a class="rating">4.8<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.4269 2.63301C11.7469 1.78901 12.9579 1.78901 13.2789 2.63301L15.3489 8.36701C15.4212 8.5538 15.5483 8.71429 15.7136 8.8273C15.879 8.94032 16.0747 9.00054 16.2749 9.00001H21.3619C22.3019 9.00001 22.7119 10.17 21.9729 10.743L18.3529 14C18.1908 14.1247 18.0723 14.2975 18.0144 14.4937C17.9566 14.6898 17.9624 14.8993 18.0309 15.092L19.3529 20.695C19.6749 21.595 18.6329 22.368 17.8449 21.814L12.9279 18.694C12.7596 18.5757 12.5588 18.5122 12.3529 18.5122C12.1471 18.5122 11.9463 18.5757 11.7779 18.694L6.86094 21.814C6.07394 22.368 5.03094 21.594 5.35294 20.695L6.67494 15.092C6.74352 14.8993 6.7493 14.6898 6.69145 14.4937C6.6336 14.2975 6.5151 14.1247 6.35294 14L2.73294 10.743C1.99294 10.17 2.40494 9.00001 3.34294 9.00001H8.42994C8.63024 9.00068 8.82601 8.94051 8.99136 8.82748C9.15671 8.71445 9.28385 8.55388 9.35594 8.36701L11.4259 2.63301H11.4269Z" fill="#FFD057" stroke="#FFD057" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                    <img class="gambar-menu" src="Images/product-5.png" alt="" srcset="">
+                    <div class="h2card">
+                    <h2>Hot Milk</h2>
+                    <h2 class="harga" style="font-weight: 700;">12 K</h2>
+                </div>
+                <div class="deskripsimenu">
+                <p style="max-width: 180px;">Hot Milk with less sugar</p>
+                    <svg class="bg-white-cart2" width="30" height="30" viewBox="-4 -4 19 19" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <rect width="10" height="10" fill="url(#pattern0)"/>
+                    <defs>
+                    <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                    <use xlink:href="#image0_1310_106" transform="scale(0.0166667)"/>
+                    </pattern>
+                    <image id="image0_1310_106" width="60" height="60" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAALZSURBVHgB7ZuBddowEIbPTMAGVSdoNqjZIJ0g7QRNJ4BMEDpByAbpBKETlE6AMgFkgusddvpoym9LwjxOjr/3ZL+cbcX/0+l0kgyRwMxTKRv+H7XdSXHUF0TMLYcxpT4AWhZRUu5ECv5FmTOS8j3i/gsRfUEZo4LnUnzEMyVlzKgoiq2cP0U884H6gLjqdWA/3lBfEDGPgaIdZcro1d9fpGwDnispU/4RLP3ZUyW6jY/UJ8Rl5y0uvaZMKQ4ZRdBYTppkOMoP7ZJLKQ/isfevLxboqTrBeJQypnzxUiZ1V90xQnfKTSs53VDeOClrabyrF0PR9oQOVZR5dkWVm2tLr0IEOzllG6T2WIrgSatgpc6ucu7LL0yC7mrIwD6TMfSdGE9570aB9fwGdnNTRXHbhZy+gctlqOAVsFudOT0Au6MQdEwGLmJ25gTel2MqQP3CkTH0ncC7rkNdWvHAbtGtHbD7GMEocL0ne8AhNEYwClwl2cMBu+9CsEWXRi381IVgDRDWsjAH7NtgwfXqpgeXrSUg74A9KkorP4E9l8X551jBufRjB+yeYpC+eokGdDIEH5tl7VU0ZoyJwNXwjrs0OMqlWwKXIxs4YPd6iO3DivUEBHnaboMhRfATsFsJXA7Yn/WQIngJ7FaGJgfsXg9durQjG3Tr0vWi9qENN42OFloZZVleDyktrKBWtiAYtbDXQ6pgNDe+ojNSr76U4HLINjCs+LIhAZnyGZZ95H+WmvFxSyYYtBB/oHJ1G60kl8X5hcSe3b53kkvXGVfM507n5u+mYGofVvRzpxXZ52Z/u/QouFoOXbNdZtQ1XIlesC10Df360PsmBS0kXE4zqnLqc4zHGle0i+mqzLyOMwMDAwMDbxMZlr5y888J9NotJXDKupPg6kOSUGZW6k6Gw7+zVqI+k+i67mMmD/ucMqvptO6uBP+IuPee4jhl3elo/+HmmdMmtY91Wfcfe0B48y7j/zUAAAAASUVORK5CYII="/>
+                    </defs>
+                    </svg>
+            </div>
+                </div>
+
+                <div class="card">
+                    <a class="rating">4.8<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.4269 2.63301C11.7469 1.78901 12.9579 1.78901 13.2789 2.63301L15.3489 8.36701C15.4212 8.5538 15.5483 8.71429 15.7136 8.8273C15.879 8.94032 16.0747 9.00054 16.2749 9.00001H21.3619C22.3019 9.00001 22.7119 10.17 21.9729 10.743L18.3529 14C18.1908 14.1247 18.0723 14.2975 18.0144 14.4937C17.9566 14.6898 17.9624 14.8993 18.0309 15.092L19.3529 20.695C19.6749 21.595 18.6329 22.368 17.8449 21.814L12.9279 18.694C12.7596 18.5757 12.5588 18.5122 12.3529 18.5122C12.1471 18.5122 11.9463 18.5757 11.7779 18.694L6.86094 21.814C6.07394 22.368 5.03094 21.594 5.35294 20.695L6.67494 15.092C6.74352 14.8993 6.7493 14.6898 6.69145 14.4937C6.6336 14.2975 6.5151 14.1247 6.35294 14L2.73294 10.743C1.99294 10.17 2.40494 9.00001 3.34294 9.00001H8.42994C8.63024 9.00068 8.82601 8.94051 8.99136 8.82748C9.15671 8.71445 9.28385 8.55388 9.35594 8.36701L11.4259 2.63301H11.4269Z" fill="#FFD057" stroke="#FFD057" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                    <img class="gambar-menu" src="Images/product-6.png" alt="" srcset="">
+                    <div class="h2card">
+                    <h2>Coffee Ice Cream</h2>
+                    <h2 class="harga" style="font-weight: 700;">12 K</h2>
+                </div>
+                <div class="deskripsimenu">
+                <p style="max-width: 180px;">Coffee with ice cream vanilla</p>
+                    <svg class="bg-white-cart2" width="30" height="30" viewBox="-4 -4 19 19" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <rect width="10" height="10" fill="url(#pattern0)"/>
+                    <defs>
+                    <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                    <use xlink:href="#image0_1310_106" transform="scale(0.0166667)"/>
+                    </pattern>
+                    <image id="image0_1310_106" width="60" height="60" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAALZSURBVHgB7ZuBddowEIbPTMAGVSdoNqjZIJ0g7QRNJ4BMEDpByAbpBKETlE6AMgFkgusddvpoym9LwjxOjr/3ZL+cbcX/0+l0kgyRwMxTKRv+H7XdSXHUF0TMLYcxpT4AWhZRUu5ECv5FmTOS8j3i/gsRfUEZo4LnUnzEMyVlzKgoiq2cP0U884H6gLjqdWA/3lBfEDGPgaIdZcro1d9fpGwDnispU/4RLP3ZUyW6jY/UJ8Rl5y0uvaZMKQ4ZRdBYTppkOMoP7ZJLKQ/isfevLxboqTrBeJQypnzxUiZ1V90xQnfKTSs53VDeOClrabyrF0PR9oQOVZR5dkWVm2tLr0IEOzllG6T2WIrgSatgpc6ucu7LL0yC7mrIwD6TMfSdGE9570aB9fwGdnNTRXHbhZy+gctlqOAVsFudOT0Au6MQdEwGLmJ25gTel2MqQP3CkTH0ncC7rkNdWvHAbtGtHbD7GMEocL0ne8AhNEYwClwl2cMBu+9CsEWXRi381IVgDRDWsjAH7NtgwfXqpgeXrSUg74A9KkorP4E9l8X551jBufRjB+yeYpC+eokGdDIEH5tl7VU0ZoyJwNXwjrs0OMqlWwKXIxs4YPd6iO3DivUEBHnaboMhRfATsFsJXA7Yn/WQIngJ7FaGJgfsXg9durQjG3Tr0vWi9qENN42OFloZZVleDyktrKBWtiAYtbDXQ6pgNDe+ojNSr76U4HLINjCs+LIhAZnyGZZ95H+WmvFxSyYYtBB/oHJ1G60kl8X5hcSe3b53kkvXGVfM507n5u+mYGofVvRzpxXZ52Z/u/QouFoOXbNdZtQ1XIlesC10Df360PsmBS0kXE4zqnLqc4zHGle0i+mqzLyOMwMDAwMDbxMZlr5y888J9NotJXDKupPg6kOSUGZW6k6Gw7+zVqI+k+i67mMmD/ucMqvptO6uBP+IuPee4jhl3elo/+HmmdMmtY91Wfcfe0B48y7j/zUAAAAASUVORK5CYII="/>
+                    </defs>
+                    </svg>
+            </div>
+                </div>
+
+            </div>
+
+
+
+            <div class="menubawah">
+                <div class="card">
+                    <a class="rating">4.8<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.4269 2.63301C11.7469 1.78901 12.9579 1.78901 13.2789 2.63301L15.3489 8.36701C15.4212 8.5538 15.5483 8.71429 15.7136 8.8273C15.879 8.94032 16.0747 9.00054 16.2749 9.00001H21.3619C22.3019 9.00001 22.7119 10.17 21.9729 10.743L18.3529 14C18.1908 14.1247 18.0723 14.2975 18.0144 14.4937C17.9566 14.6898 17.9624 14.8993 18.0309 15.092L19.3529 20.695C19.6749 21.595 18.6329 22.368 17.8449 21.814L12.9279 18.694C12.7596 18.5757 12.5588 18.5122 12.3529 18.5122C12.1471 18.5122 11.9463 18.5757 11.7779 18.694L6.86094 21.814C6.07394 22.368 5.03094 21.594 5.35294 20.695L6.67494 15.092C6.74352 14.8993 6.7493 14.6898 6.69145 14.4937C6.6336 14.2975 6.5151 14.1247 6.35294 14L2.73294 10.743C1.99294 10.17 2.40494 9.00001 3.34294 9.00001H8.42994C8.63024 9.00068 8.82601 8.94051 8.99136 8.82748C9.15671 8.71445 9.28385 8.55388 9.35594 8.36701L11.4259 2.63301H11.4269Z" fill="#FFD057" stroke="#FFD057" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                    <img class="gambar-menu" src="Images/product-7.png" alt="" srcset="">
+                    <div class="h2card">
+                    <h2>Cappucino</h2>
+                    <h2 class="harga" style="font-weight: 700;">12 K</h2>
+                    </div>
+                <div class="deskripsimenu">
+                <p style="max-width: 180px;">Hot Cappucino</p>
+                    <svg class="bg-white-cart2" width="30" height="30" viewBox="-4 -4 19 19" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <rect width="10" height="10" fill="url(#pattern0)"/>
+                    <defs>
+                    <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                    <use xlink:href="#image0_1310_106" transform="scale(0.0166667)"/>
+                    </pattern>
+                    <image id="image0_1310_106" width="60" height="60" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAALZSURBVHgB7ZuBddowEIbPTMAGVSdoNqjZIJ0g7QRNJ4BMEDpByAbpBKETlE6AMgFkgusddvpoym9LwjxOjr/3ZL+cbcX/0+l0kgyRwMxTKRv+H7XdSXHUF0TMLYcxpT4AWhZRUu5ECv5FmTOS8j3i/gsRfUEZo4LnUnzEMyVlzKgoiq2cP0U884H6gLjqdWA/3lBfEDGPgaIdZcro1d9fpGwDnispU/4RLP3ZUyW6jY/UJ8Rl5y0uvaZMKQ4ZRdBYTppkOMoP7ZJLKQ/isfevLxboqTrBeJQypnzxUiZ1V90xQnfKTSs53VDeOClrabyrF0PR9oQOVZR5dkWVm2tLr0IEOzllG6T2WIrgSatgpc6ucu7LL0yC7mrIwD6TMfSdGE9570aB9fwGdnNTRXHbhZy+gctlqOAVsFudOT0Au6MQdEwGLmJ25gTel2MqQP3CkTH0ncC7rkNdWvHAbtGtHbD7GMEocL0ne8AhNEYwClwl2cMBu+9CsEWXRi381IVgDRDWsjAH7NtgwfXqpgeXrSUg74A9KkorP4E9l8X551jBufRjB+yeYpC+eokGdDIEH5tl7VU0ZoyJwNXwjrs0OMqlWwKXIxs4YPd6iO3DivUEBHnaboMhRfATsFsJXA7Yn/WQIngJ7FaGJgfsXg9durQjG3Tr0vWi9qENN42OFloZZVleDyktrKBWtiAYtbDXQ6pgNDe+ojNSr76U4HLINjCs+LIhAZnyGZZ95H+WmvFxSyYYtBB/oHJ1G60kl8X5hcSe3b53kkvXGVfM507n5u+mYGofVvRzpxXZ52Z/u/QouFoOXbNdZtQ1XIlesC10Df360PsmBS0kXE4zqnLqc4zHGle0i+mqzLyOMwMDAwMDbxMZlr5y888J9NotJXDKupPg6kOSUGZW6k6Gw7+zVqI+k+i67mMmD/ucMqvptO6uBP+IuPee4jhl3elo/+HmmdMmtY91Wfcfe0B48y7j/zUAAAAASUVORK5CYII="/>
+                    </defs>
+                    </svg>
+            </div>
+                </div>
+
+                <div class="card">
+                    <a class="rating">4.8<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.4269 2.63301C11.7469 1.78901 12.9579 1.78901 13.2789 2.63301L15.3489 8.36701C15.4212 8.5538 15.5483 8.71429 15.7136 8.8273C15.879 8.94032 16.0747 9.00054 16.2749 9.00001H21.3619C22.3019 9.00001 22.7119 10.17 21.9729 10.743L18.3529 14C18.1908 14.1247 18.0723 14.2975 18.0144 14.4937C17.9566 14.6898 17.9624 14.8993 18.0309 15.092L19.3529 20.695C19.6749 21.595 18.6329 22.368 17.8449 21.814L12.9279 18.694C12.7596 18.5757 12.5588 18.5122 12.3529 18.5122C12.1471 18.5122 11.9463 18.5757 11.7779 18.694L6.86094 21.814C6.07394 22.368 5.03094 21.594 5.35294 20.695L6.67494 15.092C6.74352 14.8993 6.7493 14.6898 6.69145 14.4937C6.6336 14.2975 6.5151 14.1247 6.35294 14L2.73294 10.743C1.99294 10.17 2.40494 9.00001 3.34294 9.00001H8.42994C8.63024 9.00068 8.82601 8.94051 8.99136 8.82748C9.15671 8.71445 9.28385 8.55388 9.35594 8.36701L11.4259 2.63301H11.4269Z" fill="#FFD057" stroke="#FFD057" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                    <img class="gambar-menu" src="Images/product-8.png" alt="" srcset="">
+                    <div class="h2card">
+                    <h2>Moccacinno</h2>
+                    <h2 class="harga" style="font-weight: 700;">12 K</h2>
+                </div>
+                <div class="deskripsimenu">
+                <p style="max-width: 180px;">Hot Moccacinno</p>
+                    <svg class="bg-white-cart2" width="30" height="30" viewBox="-4 -4 19 19" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <rect width="10" height="10" fill="url(#pattern0)"/>
+                    <defs>
+                    <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                    <use xlink:href="#image0_1310_106" transform="scale(0.0166667)"/>
+                    </pattern>
+                    <image id="image0_1310_106" width="60" height="60" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAALZSURBVHgB7ZuBddowEIbPTMAGVSdoNqjZIJ0g7QRNJ4BMEDpByAbpBKETlE6AMgFkgusddvpoym9LwjxOjr/3ZL+cbcX/0+l0kgyRwMxTKRv+H7XdSXHUF0TMLYcxpT4AWhZRUu5ECv5FmTOS8j3i/gsRfUEZo4LnUnzEMyVlzKgoiq2cP0U884H6gLjqdWA/3lBfEDGPgaIdZcro1d9fpGwDnispU/4RLP3ZUyW6jY/UJ8Rl5y0uvaZMKQ4ZRdBYTppkOMoP7ZJLKQ/isfevLxboqTrBeJQypnzxUiZ1V90xQnfKTSs53VDeOClrabyrF0PR9oQOVZR5dkWVm2tLr0IEOzllG6T2WIrgSatgpc6ucu7LL0yC7mrIwD6TMfSdGE9570aB9fwGdnNTRXHbhZy+gctlqOAVsFudOT0Au6MQdEwGLmJ25gTel2MqQP3CkTH0ncC7rkNdWvHAbtGtHbD7GMEocL0ne8AhNEYwClwl2cMBu+9CsEWXRi381IVgDRDWsjAH7NtgwfXqpgeXrSUg74A9KkorP4E9l8X551jBufRjB+yeYpC+eokGdDIEH5tl7VU0ZoyJwNXwjrs0OMqlWwKXIxs4YPd6iO3DivUEBHnaboMhRfATsFsJXA7Yn/WQIngJ7FaGJgfsXg9durQjG3Tr0vWi9qENN42OFloZZVleDyktrKBWtiAYtbDXQ6pgNDe+ojNSr76U4HLINjCs+LIhAZnyGZZ95H+WmvFxSyYYtBB/oHJ1G60kl8X5hcSe3b53kkvXGVfM507n5u+mYGofVvRzpxXZ52Z/u/QouFoOXbNdZtQ1XIlesC10Df360PsmBS0kXE4zqnLqc4zHGle0i+mqzLyOMwMDAwMDbxMZlr5y888J9NotJXDKupPg6kOSUGZW6k6Gw7+zVqI+k+i67mMmD/ucMqvptO6uBP+IuPee4jhl3elo/+HmmdMmtY91Wfcfe0B48y7j/zUAAAAASUVORK5CYII="/>
+                    </defs>
+                    </svg>
+            </div>
+                </div>
+
+
+            
+                <div class="card">
+                    <a class="rating">4.8<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.4269 2.63301C11.7469 1.78901 12.9579 1.78901 13.2789 2.63301L15.3489 8.36701C15.4212 8.5538 15.5483 8.71429 15.7136 8.8273C15.879 8.94032 16.0747 9.00054 16.2749 9.00001H21.3619C22.3019 9.00001 22.7119 10.17 21.9729 10.743L18.3529 14C18.1908 14.1247 18.0723 14.2975 18.0144 14.4937C17.9566 14.6898 17.9624 14.8993 18.0309 15.092L19.3529 20.695C19.6749 21.595 18.6329 22.368 17.8449 21.814L12.9279 18.694C12.7596 18.5757 12.5588 18.5122 12.3529 18.5122C12.1471 18.5122 11.9463 18.5757 11.7779 18.694L6.86094 21.814C6.07394 22.368 5.03094 21.594 5.35294 20.695L6.67494 15.092C6.74352 14.8993 6.7493 14.6898 6.69145 14.4937C6.6336 14.2975 6.5151 14.1247 6.35294 14L2.73294 10.743C1.99294 10.17 2.40494 9.00001 3.34294 9.00001H8.42994C8.63024 9.00068 8.82601 8.94051 8.99136 8.82748C9.15671 8.71445 9.28385 8.55388 9.35594 8.36701L11.4259 2.63301H11.4269Z" fill="#FFD057" stroke="#FFD057" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+
+                    <img class="gambar-menu" src="Images/product-9.png" alt="" srcset="">
+                    <div class="h2card">
+                    <h2>Waffle Ice Cream</h2>
+                    <h2 class="harga" style="font-weight: 700;">12 K</h2>
+                </div>
+                <div class="deskripsimenu">
+                <p style="max-width: 180px;">Waffle with Ice ceram</p>
+                    <svg class="bg-white-cart2" width="30" height="30" viewBox="-4 -4 19 19" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <rect width="10" height="10" fill="url(#pattern0)"/>
+                    <defs>
+                    <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                    <use xlink:href="#image0_1310_106" transform="scale(0.0166667)"/>
+                    </pattern>
+                    <image id="image0_1310_106" width="60" height="60" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAALZSURBVHgB7ZuBddowEIbPTMAGVSdoNqjZIJ0g7QRNJ4BMEDpByAbpBKETlE6AMgFkgusddvpoym9LwjxOjr/3ZL+cbcX/0+l0kgyRwMxTKRv+H7XdSXHUF0TMLYcxpT4AWhZRUu5ECv5FmTOS8j3i/gsRfUEZo4LnUnzEMyVlzKgoiq2cP0U884H6gLjqdWA/3lBfEDGPgaIdZcro1d9fpGwDnispU/4RLP3ZUyW6jY/UJ8Rl5y0uvaZMKQ4ZRdBYTppkOMoP7ZJLKQ/isfevLxboqTrBeJQypnzxUiZ1V90xQnfKTSs53VDeOClrabyrF0PR9oQOVZR5dkWVm2tLr0IEOzllG6T2WIrgSatgpc6ucu7LL0yC7mrIwD6TMfSdGE9570aB9fwGdnNTRXHbhZy+gctlqOAVsFudOT0Au6MQdEwGLmJ25gTel2MqQP3CkTH0ncC7rkNdWvHAbtGtHbD7GMEocL0ne8AhNEYwClwl2cMBu+9CsEWXRi381IVgDRDWsjAH7NtgwfXqpgeXrSUg74A9KkorP4E9l8X551jBufRjB+yeYpC+eokGdDIEH5tl7VU0ZoyJwNXwjrs0OMqlWwKXIxs4YPd6iO3DivUEBHnaboMhRfATsFsJXA7Yn/WQIngJ7FaGJgfsXg9durQjG3Tr0vWi9qENN42OFloZZVleDyktrKBWtiAYtbDXQ6pgNDe+ojNSr76U4HLINjCs+LIhAZnyGZZ95H+WmvFxSyYYtBB/oHJ1G60kl8X5hcSe3b53kkvXGVfM507n5u+mYGofVvRzpxXZ52Z/u/QouFoOXbNdZtQ1XIlesC10Df360PsmBS0kXE4zqnLqc4zHGle0i+mqzLyOMwMDAwMDbxMZlr5y888J9NotJXDKupPg6kOSUGZW6k6Gw7+zVqI+k+i67mMmD/ucMqvptO6uBP+IuPee4jhl3elo/+HmmdMmtY91Wfcfe0B48y7j/zUAAAAASUVORK5CYII="/>
+                    </defs>
+                    </svg>
+                </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </section>
+
+</body>
+</html>
