@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body {
+	background-color: #fff;
+	margin: 0;
+	font-family: 'Poppins', sans-serif;
+}
+.about_us {
+	background-color: rgb(246, 235, 218);
+	position: relative;
+	overflow: hidden;
+	margin-top: -420px;
+	z-index: -1;
+	padding-top: 20px;
+	padding-bottom: 60px;
+}
+.transparent-background {
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0.5;
+	object-fit: cover;
+}
+.content {
+	display: flex;
+	position: relative;
+	margin-left: 800px;
+	margin-right: 180px;
+}
+.content-left {
+	border: solid 5px white;
+	margin-left: 280px;
+	width: 350px;
+	z-index: 1;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	border-radius: 10px;
+}
+.content-right {
+	display: inline-block;
+	padding: 20px;
+	h2 {
+		font-weight: 600;
+	}
+	h1 {
+		&:after {
+			content: "Us";
+			display: inline-block;
+			border-bottom: 5px solid rgb(255, 144, 42);
+			border-radius: 2px;
+			margin-left: 5px;
+			color: rgb(0, 0, 0);
+		}
+	}
+}
+.judul-h1-menu {
+	margin-left: 150px;
+	h1 {
+		font-size: 30px;
+		font-weight: 600;
+		&:after {
+			content: "for you";
+			display: inline-block;
+			border-bottom: 5px solid rgb(255, 144, 42);
+			border-radius: 2px;
+			margin-left: 5px;
+			color: rgb(0, 0, 0);
+		}
+	}
+}
+.get-coffee {
+	background-color: rgb(47, 33, 5);
+	color: rgb(244, 172, 39) !important;
+	text-decoration: none !important;
+	padding: 10px 20px;
+	border-radius: 20px;
+	font-weight: 700;
+	margin-top: 200px;
+}
+.special-menu {
+	margin-top: 100px !important;
+}
+.gambar-menu {
+	width: 300px;
+	height: auto;
+	border-radius: 15px;
+	z-index: 1;
+	position: relative;
+	margin-top: -20px;
+}
+.card {
+	width: 300px;
+	height: 330px;
+	background-color: #fff;
+	border-radius: 8px;
+	overflow: hidden;
+	box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+	padding: 20px;
+	h2 {
+		font-weight: 600;
+	}
+}
+.menu {
+	margin-left: 180px;
+}
+.menuatas {
+	display: flex;
+	gap: 50px;
+}
+.h2card {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.harga {
+	h2 {
+		font-weight: 800;
+	}
+}
+.bg-white-cart2 {
+	background-color: rgb(254, 143, 42);
+	padding: 5px;
+	display: inline-block;
+	border-radius: 50%;
+}
+.deskripsimenu {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: -30px;
+	p {
+		font-weight: 500;
+		color: rgb(158, 158, 158);
+	}
+}
+.menubawah {
+	margin-top: 60px;
+	display: flex;
+	gap: 50px;
+}
